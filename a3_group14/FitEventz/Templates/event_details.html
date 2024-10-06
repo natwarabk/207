@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - FitEventz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="static/style/customstyle.css" rel="stylesheet">
+
+</head>
+<body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link" href="index.html"><strong>FitEventz</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="event_details.html">Event Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="event_creation.html">Create Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking_history.html">Booking History</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="login.html" class="btn btn-login me-md-2">Login</a>
+                        <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                    </div>                         
+                </div>
+            </div>
+        </nav>
+
+        <!-- Event Details Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Event Image -->
+            <div class="col-md-6">
+                <img src="static/img/yoga.jpeg" class="img-fluid" alt="Event Image">
+            </div>
+            <!-- Event Info -->
+            <div class="col-md-6">
+                <h2>Outdoor Yoga Session</h2>
+                <p><strong>Description:</strong> Join us for a refreshing outdoor yoga session to start your day right. This event is perfect for all skill levels.</p>
+                <p><strong>Date:</strong> September 10, 2024 6:00 AM - 7:00 AM </p>
+                <p><strong>Location:</strong> Central Park</p>
+                <p><strong>Price:</strong> $20</p>
+
+                <!-- Booking Form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="ticketQuantity" class="form-label">Number of Tickets</label>
+                        <select class="form-select" id="ticketQuantity" aria-label="Select number of tickets">
+                            <option selected value="1">1 Ticket</option>
+                            <option value="2">2 Tickets</option>
+                            <option value="3">3 Tickets</option>
+                            <option value="4">4 Tickets</option>
+                            <option value="5">5 Tickets</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-orange">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="container my-5">
+        <h3>Comments</h3>
+
+        <!-- Existing Comments -->
+        <div class="mb-4">
+            <p><strong>Jane Thomas:</strong> This event was amazing! The yoga instructor was really helpful and motivating.</p>
+            <p><strong>John Smith:</strong> I loved the outdoor setting. It was the perfect way to start my morning!</p>
+        </div>
+
+        <!-- Post a Comment Form -->
+        <h5>Post a Comment</h5>
+        <form>
+            <div class="mb-3">
+                <label for="commentText" class="form-label">Your Comment</label>
+                <textarea class="form-control" id="commentText" rows="3" placeholder="Write a comment..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-orange">Post Comment</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+     <footer class="custom-footer text-center text-lg-start">
+        <div class="container p-3">
+            <div class="row">
+                <!-- Copyright -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 text-md-start">
+                    <p class="mb-0">&copy; 2024 FitEventz</p>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="terms.html" class="text-white">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0 text-md-end text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
